@@ -17,4 +17,7 @@ jobs:
       - runs: |
           echo "${{ github.event_name }}"
           echo "${{ github.ref_name }}"
+      - uses: actions/checkout@v3.3.0
+      - name: List files in the repo
+        run: |
           tree
